@@ -1,7 +1,12 @@
+import { Helmet } from "react-helmet-async"
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      <Helmet>
+        <title>CONTACT US</title>
+      </Helmet>
+    </div>
   )
 }
 
