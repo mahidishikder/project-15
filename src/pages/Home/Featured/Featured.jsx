@@ -1,5 +1,4 @@
 import featured from '../../../assets/home/featured.jpg';
-import ShareHeading from '../../../components/ShareHeading/ShareHeading';
 import './Featured.css';
 
 function Featured() {

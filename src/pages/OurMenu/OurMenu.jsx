@@ -9,6 +9,7 @@ import MenuDessers from '../../assets/menu/dessert-bg.jpeg'
 import MenuPizza from '../../assets/menu/pizza-bg.jpg'
 import MenuSalad from '../../assets/menu/salad-bg.jpg'
 import MenuSoup from '../../assets/menu/soup-bg.jpg'
+import { Link } from "react-router-dom"
 function OurMenu() {
   const [menu] = useMenu()
   const desserts = menu.filter(item => item.category === 'dessert')
@@ -24,7 +25,8 @@ function OurMenu() {
       </Helmet>
       <ShareMenuBanner heading={`OUR MENU`} title={`Would you like to try a dish?`} img={menuBanner}>
       </ShareMenuBanner>
-      <div className="mt-20">
+    <section>
+    <div className="mt-20">
       <ShareHeading title={`TODAY'S OFFER`} subTitle={`---Don't miss---`}>
 
 </ShareHeading>
@@ -35,8 +37,11 @@ function OurMenu() {
       }
      </div>
     <div className="flex justify-center my-16">
-    <button className="text-gray-700 border-b-4 font-medium  hover:bg-gray-700 hover:text-white/80 py-3 px-7 rounded-lg border-gray-900">View Full  Menu</button>
+    <Link to={`/our_shop`}>
+    <button className="text-gray-700 border-b-4 font-medium  hover:bg-gray-700 hover:text-white/80 py-3 px-7 rounded-lg border-gray-900">ORDER YOUR FAVOURITE FOOD</button>
+    </Link>
     </div>
+    </section>
 
     <section>
       <ShareBanner img={MenuDessers} title={`Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`} heading={`DESSERTS`}></ShareBanner>
@@ -48,7 +53,9 @@ function OurMenu() {
       }
      </div>
     <div className="flex justify-center my-16">
-    <button className="text-gray-700 border-b-4 font-medium  hover:bg-gray-700 hover:text-white/80 py-3 px-7 rounded-lg border-gray-900">View Full  Menu</button>
+    <Link to={`/our_shop`}>
+    <button className="text-gray-700 border-b-4 font-medium  hover:bg-gray-700 hover:text-white/80 py-3 px-7 rounded-lg border-gray-900">ORDER YOUR FAVOURITE FOOD</button>
+    </Link>
     </div>
     </section>
 
@@ -62,7 +69,9 @@ function OurMenu() {
       }
      </div>
     <div className="flex justify-center my-16">
-    <button className="text-gray-700 border-b-4 font-medium  hover:bg-gray-700 hover:text-white/80 py-3 px-7 rounded-lg border-gray-900">View Full  Menu</button>
+    <Link to={`/our_shop`}>
+    <button className="text-gray-700 border-b-4 font-medium  hover:bg-gray-700 hover:text-white/80 py-3 px-7 rounded-lg border-gray-900">ORDER YOUR FAVOURITE FOOD</button>
+    </Link>
     </div>
     </section>
 
@@ -76,7 +85,9 @@ function OurMenu() {
       }
      </div>
     <div className="flex justify-center my-16">
-    <button className="text-gray-700 border-b-4 font-medium  hover:bg-gray-700 hover:text-white/80 py-3 px-7 rounded-lg border-gray-900">View Full  Menu</button>
+    <Link to={`/our_shop`}>
+    <button className="text-gray-700 border-b-4 font-medium  hover:bg-gray-700 hover:text-white/80 py-3 px-7 rounded-lg border-gray-900">ORDER YOUR FAVOURITE FOOD</button>
+    </Link>
     </div>
     </section>
 
@@ -89,7 +100,9 @@ function OurMenu() {
       }
      </div>
     <div className="flex justify-center my-16">
-    <button className="text-gray-700 border-b-4 font-medium  hover:bg-gray-700 hover:text-white/80 py-3 px-7 rounded-lg border-gray-900">View Full  Menu</button>
+    <Link to={`/our_shop`}>
+    <button className="text-gray-700 border-b-4 font-medium  hover:bg-gray-700 hover:text-white/80 py-3 px-7 rounded-lg border-gray-900">ORDER YOUR FAVOURITE FOOD</button>
+    </Link>
     </div>
     </section>
     

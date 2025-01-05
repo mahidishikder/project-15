@@ -8,7 +8,8 @@ function ShareMenuBanner({ title, heading, img }) {
         bgImageAlt="the dog"
         strength={-200}
     >
-       <div
+      <div>
+      <div
       className="hero lg:h-[800px] md:h-[600px] sm:h-[400px] h-[380px]"
    
     >
@@ -20,6 +21,7 @@ function ShareMenuBanner({ title, heading, img }) {
         </div>
       </div>
     </div>
+      </div>
     </Parallax>
   );
 }
